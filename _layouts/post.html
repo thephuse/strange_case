@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<header style="background-image: url({{ page.featured_image }});">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <ul class="meta">
+      <li>
+        <span>
+          Published
+        </span>
+        {{ page.date | date_to_string }}
+      </li>
+      <li>
+        <span>
+          Category
+        </span>
+        {{ page.categories }}
+      </li>
+    </ul>
+    <ul class="pagination">
+      <li class="previous">
+        <a href="{{ paginator.previous_page_path }}">
+          Previous
+        </a>
+      </li>
+      <li class="next">
+        <a href="{{ paginator.next_page_path }}">
+          Next
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    {{ content }}
+  </div>
+</article>

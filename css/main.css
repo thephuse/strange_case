@@ -1,0 +1,208 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #222;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Type */
+
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 60px;
+  color: #FFF;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 18px;
+  margin-top: 36px;
+}
+
+blockquote {
+  border-left: 5px solid #ddd;
+  margin: 40px 1em;
+  padding-left: 12px;
+  font-style: italic;
+  color: #666;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Header & Article */
+
+header,
+article {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  overflow: scroll;
+  white-space: normal;
+}
+
+.container {
+  padding: 100px 50px;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+/* Header */
+
+header {
+  position: relative;
+  width: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+@media (max-width: 960px) {
+  header {
+    position: absolute;
+    width: 100%;
+    height: 320px;
+  }
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+header ul.meta {
+  margin-top: 45px;
+}
+
+header ul.meta li {
+  display: inline-block;
+  margin-right: 25px;
+  line-height: 30px;
+  color: #fff;
+}
+
+header ul.meta li span {
+  margin-right: 10px;
+  font-style: italic;
+  color: rgba(255, 255, 255, .5);
+}
+
+/* Pagination */
+
+.pagination {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.pagination a {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.pagination a:hover {
+  background: #fff;
+  color: #ce2323;
+}
+
+/* Article */
+
+article {
+  width: 65%;
+}
+
+@media (max-width: 960px) {
+  article {
+    position: absolute;
+    top: 320px;
+    width: 100%;
+  }
+}
+
+article .container {
+  padding-top: 80px;
+}
+
+article p {
+  margin-bottom: 1em;
+}
+
+article li {
+  margin-left: 3em;
+  margin-bottom: 9px;
+  list-style-type: disc;
+}
+
+article a {
+  color: #CE2323;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
