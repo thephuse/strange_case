@@ -121,6 +121,18 @@ header ul.meta {
   margin-top: 45px;
 }
 
+#home-header ul.meta {
+  margin-top: 15px;
+}
+
+#home-header .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 header ul.meta li {
   display: inline-block;
   margin-right: 25px;
@@ -205,4 +217,21 @@ article a {
 
 article a:hover {
   text-decoration: underline;
+}
+
+/* Posts List */
+
+ul.posts li {
+  list-style-type: none;
+  border-bottom: 1px solid #eeeeee;
+}
+
+ul.posts .meta {
+  display: block;
+  margin-bottom: 16px;
+  color: #8d8d8d;
+}
+
+ul.posts p {
+  margin-bottom: 36px;
 }

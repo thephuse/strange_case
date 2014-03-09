@@ -19,16 +19,20 @@ layout: default
       </li>
     </ul>
     <ul class="pagination">
-      <li class="previous">
-        <a href="{{ paginator.previous_page_path }}">
-          Previous
-        </a>
-      </li>
+      {% if page.previous.url %}
+        <li class="previous">
+          <a href="{{ page.previous.url }}">
+            Previous
+          </a>
+        </li>
+      {% endif %}
+      {% if page.next.url %}
       <li class="next">
-        <a href="{{ paginator.next_page_path }}">
+        <a href="{{ page.next.url }}">
           Next
         </a>
       </li>
+      {% endif %}
     </ul>
   </div>
 </header>

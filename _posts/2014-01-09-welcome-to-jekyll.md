@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Strange Case of Dr Jekyll and Mr Hyde"
-date: 2014-01-07 12:00:00
+date: 2014-01-09 12:00:00
 categories: jekyll
 featured_image: http://tomneal.me/stuff/jekyll/cover.jpg
 ---
