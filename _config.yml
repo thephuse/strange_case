@@ -3,3 +3,4 @@ tagline: 'Twisted tales to make you shudder'
 sidebar_image: 'http://tomneal.me/stuff/jekyll/cover.jpg'
 markdown: redcarpet
 pygments: true
+baseurl: /strange_case
