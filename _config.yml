@@ -1,6 +1,6 @@
 title: 'Strange Case'
 tagline: 'Twisted tales to make you shudder'
-sidebar_image: '/images/cover.jpg'
+sidebar_image: /images/cover.jpg
 markdown: redcarpet
 pygments: true
 baseurl: /strange_case
