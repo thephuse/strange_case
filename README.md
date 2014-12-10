@@ -4,7 +4,7 @@ Strange Case
 Strange Case is a simple, clean and responsive theme for Jekyll. 
 
 
-### Overview 
+### Demo 
 
 [Demo](http://thephuse.github.io/strange_case/)
 
@@ -13,6 +13,7 @@ Strange Case is a simple, clean and responsive theme for Jekyll.
 * Fixed Sidebar with cover image
 * Minimal design 
 * Easy to configure
+* Browser support: Latest releases of Chrome, Safari, Firefox, Mobile Safari and IE 9+.
 
 ### Screenshots
 
