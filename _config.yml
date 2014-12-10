@@ -1,6 +1,9 @@
-title: 'Strange Case'
-tagline: 'Twisted tales to make you shudder'
+# Site settings
+title: 'Strange Case' # Your Title
+tagline: 'Twisted tales to make you shudder' # A brief tagline for your site
 sidebar_image: /images/cover.jpg
+
+# Build settings
 markdown: redcarpet
-pygments: true
-baseurl: /strange_case
+highlighter: pygments
+baseurl: /strange_case # the subpath of your site, e.g. /blog/
