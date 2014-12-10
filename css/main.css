@@ -52,8 +52,10 @@ blockquote {
 
 @media (max-width: 960px) {
   h1 {
-    margin-top: 75px;
     font-size: 30px;
+  }
+  header .container ul.meta {
+    margin-bottom: 0;
   }
 }
 
@@ -74,6 +76,9 @@ article {
 }
 
 @media (max-width: 960px) {
+  article {
+    display: block;
+  }
   .container {
     padding: 25px;
   }
@@ -96,9 +101,10 @@ header {
 
 @media (max-width: 960px) {
   header {
-    position: absolute;
     width: 100%;
-    height: 320px;
+  }
+  header {
+    height: auto;
   }
 }
 
@@ -110,13 +116,54 @@ header:after {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 header .container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  padding: 0 50px;
   z-index: 1;
+}
+
+
+@media screen and (min-width: 961px){
+  #home-header .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  header .container {
+    position: absolute;
+    top: 0;
+  }
+  header .container.post-container {
+    padding: 0;
+    position: relative;
+    height: 100%;
+  }
+
+  header .post-container .inner-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 960px){
+  #home-header .container {
+    padding: 100px 50px;
+  }
+
+  header .container {
+    padding: 80px 0 10px;
+  }
+  header .container .inner-container {
+    padding: 0 50px;
+  }
 }
 
 header .home_button {
@@ -142,18 +189,17 @@ header .home_button:hover {
 
 header ul.meta {
   margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px){
+  header ul.meta {
+    margin-top: 10px;
+  }
 }
 
 #home-header ul.meta {
   margin-top: 15px;
-}
-
-#home-header .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 header ul.meta li {
@@ -171,11 +217,28 @@ header ul.meta li span {
 
 /* Pagination */
 
-.pagination {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
+@media screen and (min-width: 961px){
+  .pagination {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }  
+}
+
+@media screen and (max-width: 960px){
+  .pagination {
+    margin-top: 40px;
+    padding: 0 10px;
+  }  
+}
+
+.pagination:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
 }
 
 .previous {
@@ -213,8 +276,6 @@ article {
 
 @media (max-width: 960px) {
   article {
-    position: absolute;
-    top: 320px;
     width: 100%;
     overflow: visible;
   }

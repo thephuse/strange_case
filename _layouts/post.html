@@ -2,25 +2,27 @@
 layout: default
 ---
 <header style="background-image: url({{ site.baseurl }}{{ page.featured_image }});">
-  <div class="container">
+  <div class="container post-container">
     <a href="{{ site.baseurl }}/" class="home_button">
       <i class="fa fa-bars"></i>
     </a>
-    <h1>{{ page.title }}</h1>
-    <ul class="meta">
-      <li>
-        <span>
-          Published
-        </span>
-        {{ page.date | date_to_string }}
-      </li>
-      <li>
-        <span>
-          Category
-        </span>
-        {{ page.categories }}
-      </li>
-    </ul>
+    <div class="inner-container">
+      <h1>{{ page.title }}</h1>
+      <ul class="meta">
+        <li>
+          <span>
+            Published
+          </span>
+          {{ page.date | date_to_string }}
+        </li>
+        <li>
+          <span>
+            Category
+          </span>
+          {{ page.categories }}
+        </li>
+      </ul>      
+    </div>
     <ul class="pagination">
       {% if page.previous.url %}
         <li class="previous">
