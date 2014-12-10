@@ -97,6 +97,7 @@ header {
   background-size: cover;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
@@ -272,6 +273,7 @@ header ul.meta li span {
 
 article {
   width: 65%;
+  overflow-x: hidden;
 }
 
 
