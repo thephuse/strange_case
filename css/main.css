@@ -274,15 +274,19 @@ article {
   width: 65%;
 }
 
+
+article .container {
+  padding-top: 80px;
+}
+
 @media (max-width: 960px) {
   article {
     width: 100%;
     overflow: visible;
   }
-}
-
-article .container {
-  padding-top: 80px;
+  article .container {
+    padding: 25px !important;
+  }
 }
 
 article p {
