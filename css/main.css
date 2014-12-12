@@ -174,8 +174,8 @@ header .home_button {
   top: 10px;
   left: 10px;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 21px;
+  height: 18px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   line-height: 40px;
@@ -183,11 +183,22 @@ header .home_button {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   text-align: center;
+  background-image: url(../images/icon_home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
 }
 
 header .home_button:hover {
   background: #fff;
+  background-image: url(../images/icon_home_hover.png);
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ce2323;
+  transition: background 300ms linear;
+  -webkit-transition: background 300ms linear;
 }
 
 header ul.meta {
