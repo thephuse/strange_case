@@ -183,7 +183,7 @@ header .home_button {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   text-align: center;
-  background-image: url(../images/icon_home.png);
+  background-image: url(../images/icon_home.svg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
@@ -193,7 +193,7 @@ header .home_button {
 
 header .home_button:hover {
   background: #fff;
-  background-image: url(../images/icon_home_hover.png);
+  background-image: url(../images/icon_home_hover.svg);
   background-position: center;
   background-repeat: no-repeat;
   color: #ce2323;
@@ -237,14 +237,14 @@ header ul.meta li span {
     right: 10px;
     bottom: 10px;
     left: 10px;
-  }  
+  }
 }
 
 @media screen and (max-width: 960px){
   .pagination {
     margin-top: 40px;
     padding: 0 10px;
-  }  
+  }
 }
 
 .pagination:after {
