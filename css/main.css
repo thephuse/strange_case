@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 html,
 body {
   height: 100%;
