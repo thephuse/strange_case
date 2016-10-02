@@ -1,7 +1,7 @@
 # Site settings
 title: 'mrjimath' # Your Title
 tagline: 'Friendly, neighborhood 3.14-friendly math teacher.' # A brief tagline for your site
-sidebar_image: 
+sidebar_image: images/Skool_in_two_easy_steps.____.jpg
 
 # Build settings
 markdown: redcarpet
